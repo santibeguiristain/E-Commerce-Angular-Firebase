@@ -1,0 +1,21 @@
+-- Login Auth por correo electronico.
+
+-- Base Firebase.
+
+
+
+
+GIT 
+
+https://github.com/santibeguiristain/Evaluacion-Final-E-Commerce-Angular-.git
+
+
+
+Credenciales
+
+email: santibeguiristain1992@gmail.com
+pass : santiago
+
+
+
+Igualmente hay un formulario de Registro el cual permite dar de alta un nuevo mail.

@@ -1,0 +1,75 @@
+ 
+<div class="contentFormCatalogo"  role="main">
+  <header>  </header>
+    <body id="idBodyCatalog"> 
+        <!--Buscador de producto-->
+        <div class="card-body">
+              
+          <div class="productos-buscador">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-9 col-lg-9 catalogo-item">
+                        <h2 class="section-heading ">Catalogue product </h2>
+                    </div>
+                    <div class="col-md-6 col-sm-3 col-lg-3 catalogo-item">
+                      <input class="form-control"  type="text"  name="filterProd"  [(ngModel)]="filterProd" placeholder="Search ...">
+                    </div>
+                </div>   
+              </div>
+              <div class="productos-grilla">
+                  <!-- catalogo Grid -->
+                <section class="bg-light page-section" id="catalogo">
+                  <div class="container">
+                        <div class="row">
+                          
+                          <!-- PRODUCTO------------------------------------------------------------>
+                          <div *ngFor="let prod of listProd | filter:filterProd"> 
+                            <div class="col-12 portfolio-item"> <!--Tiene que ir siempre 12-->
+                                <div class="col-12 product-item">
+                                
+                                  <img src="{{urlImageProd}}{{prod.imagen}}"  class="img-fluid" alt="Responsive image" width="150px"  >
+
+                                  <div class="col-12 infoProduct">
+                                      <div class="col-sm-8 col-md-8 col-lg-12 infoProduct-Text"  >
+                                         <strong > {{ prod.descripcion }}</strong>
+                                      </div>
+                                      <div class="col-sm-8 col-md-8 col-lg-12 infoProduct-Text"> 
+                                          Precio:${{ prod.precio}} 
+                                      </div>
+                                      <div class="col-sm-8 col-md-8 col-lg-12 infoProduct-Text">
+                                        <label  id="cantStockDisp"  > Unidades disponibles: {{ prod.unidad_disponible}} </label>
+                                      </div>
+                                  </div>
+                                  
+                                    <!-- Botones-->  
+                                  <div class="product-button col-15" >
+                                    <button  class="btn btn-info col-3.5" [routerLink]="['/detail-product',prod.precio,prod.descripcion,prod.unidad_disponible,prod.imagen]">
+                                        Ver Mas
+                                     
+                                    </button>
+                                      
+                                    <button class="btn btn-warning col-3" type="submit"   (click)="addToCart(prod)">
+                                        Añadir
+                                    </button>
+                                  
+                                    
+                                  <input class="cantAddCart" id="{{prod.idproduct}}" type="text" > 
+                                
+                            
+                                  </div>
+                                </div> 
+                            </div>
+                          </div>
+                          {{cant}}
+                            <!--FIN PRODUCTO------------------------------------------------------------>
+                    </div>
+                </div>
+              </section>
+            </div>
+      </div>
+   </body>
+
+  
+  <footer>  </footer>  
+</div>
+
+ 

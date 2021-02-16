@@ -1,0 +1,35 @@
+
+ <body id="bodyDetails">
+
+   <div class="col-11 mx-auto mt-4">
+  <div class="card-body col-12">
+    <p class="tituloProdInfo">{{ descripcion}}</p>
+    <hr style="color: #c4552a;" />
+    <div class="row">
+        <!--Image-->
+        <span class="border border-info">
+          <div class="col-xs-6 img-detalle">
+         
+            <img src="{{urlImageProd}}{{imagen}}"  class="img-fluid" alt="Responsive image" width="350px"  >
+
+          </div>
+        </span>
+
+        <!--Info-->
+        <div class="infoProductText col-xs-6">
+          <div class="infoProduct-Text"> 
+            Precio:$  {{ precio}}
+          </div>
+          <div class=" infoProduct-Text">
+           Unidades disponibles : {{ unidades}}
+          </div>
+        </div>
+        
+    </div>
+    <div class="divbtnAtras ">
+        <button class="btn btn-light" type="button" [routerLink]="['/catalogo']"> Atras</button>
+    </div>
+  
+</div></div>
+
+</body>

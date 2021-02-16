@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-ng-ec18c": {
+      "hosting": {
+        "login": [
+          "login-ng-ec18c"
+        ]
+      }
+    }
+  }
+}

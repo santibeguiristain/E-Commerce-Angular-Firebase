@@ -1,0 +1,21 @@
+.card-body
+{
+    width: 70%;
+    margin-top: 10%;
+    margin-left:15%;
+    margin-right:20%;
+    margin-bottom: 15%;
+    
+}
+
+#lableTituloLogin,#lablePass,#lableEmail,#lableMensaje
+{
+    color: white;
+}
+
+.buttonStyle{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+  }

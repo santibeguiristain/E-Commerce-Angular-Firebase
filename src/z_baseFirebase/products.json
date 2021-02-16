@@ -1,0 +1,48 @@
+{
+  "productos" : [ {
+    "imagen" : "aguacate.jpg",
+    "descripcion" : "Aguacate",
+    "precio" : 61,
+    "unidad_disponible" : 50
+  }, {
+    "imagen" : "ajo.jpg",
+    "descripcion" : "Ajo",
+    "precio" : 50,
+    "unidad_disponible" : 25
+  }, {
+    "imagen" : "almendras.jpg",
+    "descripcion" : "Almendras",
+    "precio" : 50,
+    "unidad_disponible" : 25
+  }, {
+    "imagen" : "arandanos.jpg",
+    "descripcion" : "Arandanos",
+    "precio" : 21,
+    "unidad_disponible" : 105
+  }, {
+    "imagen" : "brocoli.jpg",
+    "descripcion" : "Brocoli",
+    "precio" : 79,
+    "unidad_disponible" : 69
+  }, {
+    "imagen" : "calabaza.jpg",
+    "descripcion" : "Calabaza",
+    "precio" : 50,
+    "unidad_disponible" : 25
+  }, {
+    "imagen" : "canela.jpg",
+    "descripcion" : "Canela",
+    "precio" : 50,
+    "unidad_disponible" : 25
+  }, {
+    "imagen" : "cebolla.jpg",
+    "descripcion" : "Cebolla",
+    "precio" : 12,
+    "unidad_disponible" : 12
+  }, {
+    "imagen" : "FRESA.jpg",
+    "descripcion" : "Fresa",
+    "precio" : 19,
+    "unidad_disponible" : 690
+  } ]
+}
